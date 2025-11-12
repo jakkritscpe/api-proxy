@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
   const { name = "", phone = "" } = req.body || {};
   try {
-    await fetch("https://script.google.com/macros/s/AKfycb.../exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbypRBiKenPB3KMKSmEkmHekEFeCeK1luxHNSbLg7G_ZRXWbbezStoR4-0vw0UIpkwdYtg/exec", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, phone })
